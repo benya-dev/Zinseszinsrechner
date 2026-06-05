@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background-color: #f1f2f6;
+}
+
+#container {
+  width: 90%;
+  min-height: 700px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px gainsboro;
+  margin: auto;
+  padding: 20px;
+}
+
+fieldset {
+  background-color: whitesmoke;
+  max-width: 600px;
+  height: 350px;
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  box-shadow: 3px 3px 8px black;
+}
+
+legend {
+  font-size: 1.4rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px black;
+}
+
+#button {
+  max-width: 100px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  box-shadow: 3px 3px 14px #535c68;
+  background-color: white;
+}
+
+#button:hover {
+  background-color: black;
+  color: white;
+}
+
+#ausintervall {
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#ausintervall:hover {
+  cursor: pointer;
+}
+
+#darkmode {
+  max-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border: 2px solid black;
+  background-color: black;
+  cursor: pointer;
+}
+
+
+
+#darkmode > img {
+  filter: invert(1);
+  width: 25px;
+}
+
+ #startkapital,#mkapital ,#prozent, #laufzeit{
+   height: 30px;
+   border: 2px solid black;
+   border-radius: 5px;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+input[type=number]:focus {
+  outline: none;
+  box-shadow: 3px 3px 8px black;
+}
+
+.chart-container {
+  border: 2px solid black;
+  box-shadow: 3px 3px 8px black;
+  border-radius: 5px;
+  max-width: 600px;
+  min-height: 300px;
+  margin: 50px auto;
+  position: relative;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.ergebnise {
+  background-color: whitesmoke;
+  max-width: 600px;
+  min-height: 150px;
+  padding: 20px;
+  margin: 30px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px black;
+  position: relative;
+}
+
+.ergebnise > ul > li {
+  list-style-type: square;
+  font-size: 1.3rem;
+}
+
+.ergebnise > ul > li > span {
+  font-size: 1.3rem;
+}
+
+.ergebnise > ul > li:nth-child(1)::marker {
+  color: blue;
+  font-size: 1.7rem;
+}
+
+.ergebnise > ul > li:nth-child(2)::marker {
+  color: rgb(160, 65, 160);
+  font-size: 1.7rem;
+}
+
+.ergebnise > ul > li:nth-child(3)::marker {
+  color: green;
+  font-size: 1.7rem;
+}
+
+.chart-art-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  
+}
+
+#chart-art {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#chart-art:hover {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+  fieldset {
+    grid-template-columns: 1fr;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .ergebnise {
+    height: 250px;
+  }
+}
