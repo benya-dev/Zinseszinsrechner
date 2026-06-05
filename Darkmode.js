@@ -23,7 +23,7 @@ class Darkmode {
       const ergebnise = document.querySelector(".ergebnise");
       if(!this.darkmodeStatus) {
       this.darkmodeStatus = true;
-      this.button.firstElementChild.src = "./img/sonne.png"
+      this.button.firstElementChild.src = "sonne.png"
       this.container.style.backgroundColor = "black";
       this.container.style.border = "5px solid white";
       this.fieldset.style.backgroundColor = "black";
@@ -40,7 +40,7 @@ class Darkmode {
         this.container.removeAttribute("style");
         this.fieldset.removeAttribute("style");
         this.legend.removeAttribute("style");
-        this.button.firstElementChild.src = "./img/darkmode.png";
+        this.button.firstElementChild.src = "darkmode.png";
 
         if(ergebnise) {
         const result = this.result;
