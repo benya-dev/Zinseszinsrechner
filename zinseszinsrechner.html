@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Zinseszinsrechner</title>
+</head>
+<body>
+  
+ <div id="container">
+ <form>
+   <fieldset>
+    <legend>Zinseszinsrechner</legend>
+    <label for="startkapital">Startkapital :</label>
+    <input type="number" id="startkapital" name="startkapital" placeholder="in Euro" min="1" max="100000000"/>
+
+    <label for="mkapital">Monatliche Sparrate :</label>
+    <input type="number" id="mkapital" name="mkapital" placeholder="in Euro" min="1" max="10000000"/>
+    
+    <label for="prozent">Zinssatz :</label>
+    <input type="number" id="prozent" name="prozent" required placeholder="Jährlich" min="1" max="500"/>
+    
+    <label for="laufzeit">Laufzeit :</label>
+    <input type="number" id="laufzeit" name="laufzeit" required placeholder="in Jahren" min="1" max="150"/>
+
+   <label for="ausintervall">Ausschüttungsintervall : </label>
+   <select id="ausintervall" name="ausintervall">
+    <option>Monatlich</option>
+    <option selected>Jährlich</option>
+   </select> 
+    
+    <button type="button" id="darkmode"><img src="darkmode.png" alt="Dmode"/></button>
+    <input type="submit" id="button" value="Berechnen"/>
+   </fieldset>
+ </form>
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/decimal.js@10.4.3/decimal.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script> 
+  <script src="ZinseszinsRechner.js" defer></script>
+  <script src="Darkmode.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html> 
+
